@@ -1,6 +1,10 @@
 import React from "react";
 
-const Button = () => {
+interface Props {
+  title: string;
+}
+
+const Button = ({ title }: Props) => {
   return <div>Button</div>;
 };
 

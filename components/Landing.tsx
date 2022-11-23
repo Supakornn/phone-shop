@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Button from "./Button";
 
 const Landing = () => {
   return (
@@ -14,13 +15,13 @@ const Landing = () => {
         </h1>
 
         <div>
-          {/* <Button title="Buy Now" /> */}
+          <Button title="Buy Now" />
           <a className="link">Learn More</a>
         </div>
       </div>
 
       <div className="relative hidden h-[450px] w-[450px] transition-all duration-500 md:inline lg:h-[650px] lg:w-[600px]">
-        <Image src="/public/iphone.png" layout="fill" objectFit="contain" alt="" />
+        <Image src="/iphone.png" layout="fill" objectFit="contain" alt="" />
       </div>
     </section>
   );

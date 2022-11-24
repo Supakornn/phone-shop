@@ -14,7 +14,7 @@ const Landing = () => {
           <span className="block">Driven By Values</span>
         </h1>
 
-        <div>
+        <div className="space-x-8">
           <Button title="Buy Now" />
           <a className="link">Learn More</a>
         </div>

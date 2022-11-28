@@ -10,3 +10,5 @@ interface Category {
   };
   title: string;
 }
+
+interface Product {}

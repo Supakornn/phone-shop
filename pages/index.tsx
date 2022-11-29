@@ -40,7 +40,6 @@ const Home = ({ categories, products }: Props) => {
               {categories.map((category) => (
                 <Tab
                   key={category._id}
-                  id={category._id}
                   className={({ selected }) =>
                     `whitespace-nowrap rounded-t-lg py-3 px-5 text-sm font-light outline-none md:py-4 md:px-6 md:text-base ${
                       selected

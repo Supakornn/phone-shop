@@ -8,10 +8,10 @@ _id,
 }`;
 
 type Data = {
-  categories: Category[];
+   categories: Category[];
 };
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
-  const categories: Category[] = await sanityClient.fetch(query);
-  res.status(200).json({ categories });
+   const categories: Category[] = await sanityClient.fetch(query);
+   res.status(200).json({ categories });
 }

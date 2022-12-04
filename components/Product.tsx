@@ -2,13 +2,19 @@ import React from "react";
 import Image from "next/image";
 import { urlFor } from "../sanity";
 import { ShoppingCartIcon } from "@heroicons/react/outline";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../redux/cartSlice";
 
 interface Props {
    product: Product;
 }
 
 const Product = ({ product }: Props) => {
-   const addItemToCart = () => {};
+   const dispatch = useDispatch();
+   const addItemToCart = () => {
+      dispatch(addToCart(product));
+   };
+
    return (
       <div className="flex h-fit w-[320px] select-none flex-col space-y-3 rounded-xl bg-[#35383c] p-8 md:h-[500px] md:w-[400px] md:p-10">
          <div className=" relative h-64 w-full md:h-72">

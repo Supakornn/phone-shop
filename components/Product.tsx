@@ -4,6 +4,7 @@ import { urlFor } from "../sanity";
 import { ShoppingCartIcon } from "@heroicons/react/outline";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/cartSlice";
+import toast from "react-hot-toast";
 
 interface Props {
    product: Product;
@@ -13,6 +14,7 @@ const Product = ({ product }: Props) => {
    const dispatch = useDispatch();
    const addItemToCart = () => {
       dispatch(addToCart(product));
+      toast.success(`${product.title} added to cart!`, { position: "bottom-center" });
    };
 
    return (

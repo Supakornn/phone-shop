@@ -5,12 +5,12 @@ import { store } from "../redux/store";
 import { Toaster } from "react-hot-toast";
 
 function MyApp({ Component, pageProps }: AppProps) {
-   return (
-      <Provider store={store}>
-         <Toaster />
-         <Component {...pageProps} />
-      </Provider>
-   );
+  return (
+    <Provider store={store}>
+      <Toaster />
+      <Component {...pageProps} />
+    </Provider>
+  );
 }
 
 export default MyApp;

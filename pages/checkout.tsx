@@ -8,11 +8,15 @@ import { useRouter } from "next/router";
 import CheckoutProduct from "../components/CheckoutProduct";
 import Currency from "react-currency-formatter";
 import { ChevronDownIcon } from "@heroicons/react/outline";
+import { Stripe } from "stripe";
+import { fetchPostJSON } from "../utils/api-helpers";
+import getStripe from "../utils/get-stripejs";
 
 const checkout = () => {
   const items = useSelector(selectCartItems);
   const cartTotal = useSelector(selectCartTotal);
   const router = useRouter();
+  const [loading, setLoading] = useState(false);
   const [groupedItems, setGroupedItems] = useState({} as { [key: string]: Product[] });
 
   useEffect(() => {
@@ -22,6 +26,29 @@ const checkout = () => {
     }, {} as { [key: string]: Product[] });
     setGroupedItems(groupedItems);
   }, [items]);
+
+  const createCheckoutSession = async () => {
+    setLoading(true);
+
+    const checkoutSession: Stripe.Checkout.Session = await fetchPostJSON("/api/checkout_sessions", {
+      items: items
+    });
+
+    //   Internal Sever Error
+    if ((checkoutSession as any).statusCode === 500) {
+      console.log((checkoutSession as any).message);
+      return;
+    }
+
+    //   Redirect to Checkout
+    const stripe = await getStripe();
+    const { error } = await stripe!.redirectToCheckout({
+      sessionId: checkoutSession.id
+    });
+
+    console.warn(error.message);
+    setLoading(false);
+  };
 
   return (
     <div className="min-h-screen overflow-hidden bg-[#E7ECEE]">
@@ -93,10 +120,10 @@ const checkout = () => {
                     </h4>
                     <Button
                       noIcon
-                      // loading={loading}
+                      loading={loading}
                       title="Check Out"
                       width="w-full"
-                      // onClick={createCheckoutSession}
+                      onClick={createCheckoutSession}
                     />
                   </div>
 

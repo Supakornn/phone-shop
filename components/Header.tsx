@@ -4,6 +4,7 @@ import Link from "next/link";
 import { SearchIcon, ShoppingBagIcon, UserIcon } from "@heroicons/react/outline";
 import { useSelector } from "react-redux";
 import { selectCartItems } from "../redux/cartSlice";
+import { signIn, signOut, useSession } from "next-auth/react";
 
 const Header = () => {
   const session = false;
@@ -49,10 +50,7 @@ const Header = () => {
             // onClick={() => signOut()}
           />
         ) : (
-          <UserIcon
-            className="headerIcon"
-            // onClick={() => signIn()}
-          />
+          <UserIcon className="headerIcon" onClick={() => signIn()} />
         )}
       </div>
     </header>

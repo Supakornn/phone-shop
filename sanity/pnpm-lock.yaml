@@ -5591,8 +5591,8 @@ packages:
       tslib: 2.4.1
     dev: false
 
-  /follow-redirects@1.15.2(debug@2.6.9):
-    resolution: {integrity: sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==}
+  /follow-redirects@1.15.4(debug@2.6.9):
+    resolution: {integrity: sha512-Cr4D/5wlrb0z9dgERpUL3LrmPKVDsETIJhaCMeDfuFYcqa5bldGV6wBsAN6X/vxlXQtFBMrXdXxdL8CbDTGniw==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
@@ -5801,7 +5801,7 @@ packages:
       create-error-class: 3.0.2
       debug: 2.6.9(supports-color@4.5.0)
       decompress-response: 3.3.0
-      follow-redirects: 1.15.2(debug@2.6.9)
+      follow-redirects: 1.15.4(debug@2.6.9)
       form-urlencoded: 2.0.9
       into-stream: 3.1.0
       is-plain-object: 2.0.4
@@ -5827,7 +5827,7 @@ packages:
       create-error-class: 3.0.2
       debug: 2.6.9(supports-color@4.5.0)
       decompress-response: 6.0.0
-      follow-redirects: 1.15.2(debug@2.6.9)
+      follow-redirects: 1.15.4(debug@2.6.9)
       form-urlencoded: 2.0.9
       into-stream: 3.1.0
       is-plain-object: 2.0.4

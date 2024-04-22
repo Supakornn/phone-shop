@@ -1130,8 +1130,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /jose@4.15.2:
-    resolution: {integrity: sha512-IY73F228OXRl9ar3jJagh7Vnuhj/GzBunPiZP13K0lOl7Am9SoWW3kEzq3MCllJMTtZqHTiDXQvoRd4U95aU6A==}
+  /jose@4.15.5:
+    resolution: {integrity: sha512-jc7BFxgKPKi94uOvEmzlSWFFe2+vASyXaKUpdQKatWAESU2MWjDfFf0fdfc83CDKcA5QecabZeNLyfhe3yKNkg==}
     dev: false
 
   /js-tokens@4.0.0:
@@ -1278,7 +1278,7 @@ packages:
       '@babel/runtime': 7.23.1
       '@panva/hkdf': 1.1.1
       cookie: 0.5.0
-      jose: 4.15.2
+      jose: 4.15.5
       next: 14.0.1(react-dom@18.2.0)(react@18.2.0)
       oauth: 0.9.15
       openid-client: 5.6.0
@@ -1445,7 +1445,7 @@ packages:
   /openid-client@5.6.0:
     resolution: {integrity: sha512-uFTkN/iqgKvSnmpVAS/T6SNThukRMBcmymTQ71Ngus1F60tdtKVap7zCrleocY+fogPtpmoxi5Q1YdrgYuTlkA==}
     dependencies:
-      jose: 4.15.2
+      jose: 4.15.5
       lru-cache: 6.0.0
       object-hash: 2.2.0
       oidc-token-hash: 5.0.3

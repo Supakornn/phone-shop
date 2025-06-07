@@ -550,6 +550,9 @@ packages:
   caniuse-lite@1.0.30001720:
     resolution: {integrity: sha512-Ec/2yV2nNPwb4DnTANEV99ZWwm3ZWfdlfkQbWSDDt+PsXEVYwlhPH8tdMaPunYTKKmz7AnHi2oNEi1GcmKCD8g==}
 
+  caniuse-lite@1.0.30001721:
+    resolution: {integrity: sha512-cOuvmUVtKrtEaoKiO0rSc29jcjwMwX5tOHDy4MgVFEWiUXj4uBMJkwI8MDySkgXidpMiHUcviogAvFi4pA2hDQ==}
+
   capture-stack-trace@1.0.2:
     resolution: {integrity: sha512-X/WM2UQs6VMHUtjUDnZTRI+i1crWteJySFzr9UpGoQa4WQffXVTTXuekjl7TjZRlcF2XfjgITT0HxZ9RnxeT0w==}
     engines: {node: '>=0.10.0'}
@@ -2039,6 +2042,8 @@ snapshots:
 
   caniuse-lite@1.0.30001720: {}
 
+  caniuse-lite@1.0.30001721: {}
+
   capture-stack-trace@1.0.2: {}
 
   chokidar@3.6.0:
@@ -2503,7 +2508,7 @@ snapshots:
       '@swc/counter': 0.1.3
       '@swc/helpers': 0.5.15
       busboy: 1.6.0
-      caniuse-lite: 1.0.30001720
+      caniuse-lite: 1.0.30001721
       postcss: 8.4.31
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)

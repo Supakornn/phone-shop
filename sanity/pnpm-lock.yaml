@@ -3728,8 +3728,8 @@ packages:
   nano-pubsub@2.0.1:
     resolution: {integrity: sha512-RWgGP2TdeKZLx+guR5a7/BzYs85sj6yrXXyj0o/znbgzPlz/Ez9wQuKDpwUZ8q+u2RxXpqZ1iTkPXCIU+GHhpA==}
 
-  nanoid@3.3.4:
-    resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
+  nanoid@3.3.8:
+    resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
@@ -6852,7 +6852,7 @@ snapshots:
       json-reduce: 2.0.0
       lodash: 4.17.21
       nano-pubsub: 2.0.1
-      nanoid: 3.3.4
+      nanoid: 3.3.8
       observable-callback: 1.0.2(rxjs@6.6.7)
       pluralize: 7.0.0
       polished: 4.2.2
@@ -6884,7 +6884,7 @@ snapshots:
 
   '@sanity/bifur-client@0.3.0':
     dependencies:
-      nanoid: 3.3.4
+      nanoid: 3.3.8
       rxjs: 6.6.7
 
   '@sanity/block-tools@2.35.0':
@@ -7061,7 +7061,7 @@ snapshots:
       leven: 3.1.0
       lodash: 4.17.21
       mendoza: 2.1.1
-      nanoid: 3.3.4
+      nanoid: 3.3.8
       react: 17.0.2
       react-copy-to-clipboard: 5.1.0(react@17.0.2)
       react-is: 17.0.2
@@ -10632,7 +10632,7 @@ snapshots:
 
   nano-pubsub@2.0.1: {}
 
-  nanoid@3.3.4: {}
+  nanoid@3.3.8: {}
 
   nanomatch@1.2.13(supports-color@4.5.0):
     dependencies:
@@ -11485,7 +11485,7 @@ snapshots:
 
   postcss@8.4.19:
     dependencies:
-      nanoid: 3.3.4
+      nanoid: 3.3.8
       picocolors: 1.0.0
       source-map-js: 1.0.2
 
